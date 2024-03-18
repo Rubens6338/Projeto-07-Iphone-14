@@ -1,0 +1,228 @@
+Curso DevClub Iphone 14
+
+01 : comecar pelo html trocando a linguagem, o colocando o titulo do projeto
+     Iphone - Apple - (Brasil)
+02 : ai dentro da tag body colocar a tag h1 iPhone 14
+03 : depois abaixo da tag h1, colocar a tag h2 tão poderoso.tão ao seu alcance
+04 : logo abaixo colocar um paragrafo Em dois tamanhos perfeitos. Agora com um toque de amarelo.
+05 : logo abaixo colocar a tag h3 A partir de R$ 633,25/mês ou 7.599*
+06 : logo abaixo colocar a tag button Comprar
+07 : ai vou comecar a incluir as imagens do projeto
+              <img src="./img/iphone-azul.png" alt="iphone-azul">
+08 : ai vou criar o arquivo style.css
+     e ir no html e incluir o link do css no html
+              <link rel="stylesheet" href="style.css">
+09 : ai vou no css estilizar a imagem
+               img {      }
+                      width: 450px;
+10 : ai vou no html e vou criar minha primeira div
+              <div>  (e colocar as tags dentro dela, menos a de imagem)
+                <h1, <h2, <p, <h3, <button
+11 : ai vou montar outra div, agora abaixo do body e incluindo a tag imagem
+              <div>
+                <div>
+                  <h1, <h2, <p, <h3, <button, <img
+12 : ai no html ainda, abaixo body, vou criar outra div para o menu superior
+              <div>
+                <p>Menu Superior</p>
+13 : ai vou colocar uma classe na div de caixa azul
+              <div>
+                <div class="caixa-azul">
+     ai no css estilizar ela
+                 .caixa-azul {     }
+                               displey: flex;
+14 : ai no html, vou dar uma classe no h1
+              <h1 class="titulo-iphone">iphone 14</h1>
+     ai no css estilizar ele
+                 .titulo-iphone {      }
+                                  font-size: 30px;
+15 : ai no html, vou dar uma classe no h2
+              <h2 class="titulo-secundario">tao poderoso....
+     ai no css estilizar ele
+                 .titulo-secundario {     }
+                                       font-size: 40px; (tamanho do texto)
+16 : ai no html, vou dar uma classe no p
+              <p class="paragrafo">em dois tamanhos.....
+     ai no css estilizar ele
+                 .paragrafo {     }
+                              font-size: 15px;
+17 : ai no html, vou dar uma classe no h3
+              <h3 class="preco">a partir de ........
+     ai no css estilizar ele
+                 .preco {       }
+                           font-size: 20px;
+                           color: #626262;
+                           font-weight: 300;
+18 : ai vou no comeco do css e colocar o * que é o q manda em tudo
+                 * {     }
+                     font-family: sans-serif;
+                     margin: 0; margem externa da pagina
+                     padding: 0; margem interna 
+                     box-sizing: border-box;
+19 : ai vou continuar a estilizar meu h2 incluindo :
+                     margin-top: 10px; (margem na parte de cima)
+                     margin-botton: 20px; (margem na parte de baixo)
+20 : ai vou continuar a estilizar meu p incluindo :
+                     margin-botton: 25px;
+21 : ai vou continuar a estilizar meu h3 incluindo :
+                     margin-botton: 30px;
+22 : ai no html, vou dar uma classe no button
+              <button class="botao">comprar ....
+                 .botao {     }
+                          background-color: #0071e3;
+                          color: #ffffff;
+                          padding: 10px 20px; (ele coloca a margem dentro do botao, nesse caso as laterais tem +)
+                          border: none; (sem borda no botao)
+                          border-radius: 20px;
+                          font-size: 20px;
+                          cursor: pointer;
+23 : ai no css eu vou no .caixa-azul e vou Incluir :
+                          padding: 50px;
+24 : ai vou no html e criar outra div para as bolinhas coloridas, com a tag button, abaixo da tag button
+     e criar classes para eles
+               <div>
+                 no caso sao 6 bolinhas, 6 botoes
+                 <button class="azul"></button>
+                               "amarelo"
+                               "branco"
+                               "preto"
+                               "vermelho"
+                               "roxo"
+     ai vamos no css e comecar a estilizar eles
+                         .azul {     }
+                                ( width: 40px;
+                                 height: 40px;
+                                 background-color: #81A5C4;  (vai desfazer esse)
+                                 border-radius: 50px;
+                                 border: none;
+                                 cursor: pointer;) 
+25 : ai vou no html e nas tags de botao para as bolinhas, vou incluir dentro da classe troca-cor
+                 <button class="azul troca-cor"></button>
+     ai fazer para todos os botoes (colocando troca-cor)
+26 : ai no css vai ficar a classe 
+                         .troca-cor {     } (que vai ficar fixo para todas as cores)
+                                       width: 40px;
+                                       height: 40px;
+                                       border-radius: 50px;
+                                       border: none;
+                                       cursor: pointer;
+    ai abaixo do troca-cor vamos so trocar as cores, colocando um, por um
+                         .azul {      }
+                                    background-color: #81A5C4;
+                         .amarelo {   }
+                                    background-color: #F7DA47;
+                         .branco {    }
+                                    background-color: #C1C1C1;
+                         .preto {     }
+                                    background-color: #272D33;
+                         .vermelho {  }
+                                    background-color: #B50012;
+                         .roxo {      }
+                                    background-color: #EDE7F1;
+27 : ai no html abaixo do button comprar, vamos adicionar uma tag <p>
+                     <p class="escolha-cor">Escolha sua Cor</p>
+     ai no css vamos estilizar esse <p>
+                         .escolha-cor {     }
+                                        font-size: 16px;
+                                        color: #3a3a3a;
+                                        font-weight: 700;
+                                        margin-top: 50px;
+                                        margin-button: 15px;
+28 : ai vou no css, achar o .caixa-azul e incluir :
+                               justify-content: space-between; (joga os objetos da pagina, um pra cada lado)
+29 : ai no css vou em img e incluir :
+                               margin-top: 100px;
+30 : ai no css volto la no .caixa-azul e vou incluir :
+                               align-items: center;
+31 : ai vou no html, na div que esta escrito menu superior, tirar o paragrafo e incluir uma imagem
+                     <img src="./img/logo.png"
+32 : ai desco na tag imagem la em baixo, e vou dar uma classe a ela
+                     <img class="iphone" src="./img/iphon.....
+33 : ai volto na tag imagem q criei a poko e vou dar uma classe a ela
+                     <img class="logo" src="./img/logo ......
+34 : ai vou la no css e onde estava estilizado img, vai virar .iphone
+                          .iphone {     }
+35 : ai no css vou la em cima, abaixo do asterisco, estilizar o logo
+                          .logo {      }
+                                   height: 20px;
+36 : ai volto no html, e la na div que esta a imagem do logo, vou incluir uma lista
+                     <ul>
+                       <li>Mac</li>
+                       <li>iphone</li>
+                       <li>ipad</li>
+                       <li>Watch</li>
+                       <li>AirPods</li>
+                       <li>Acessórios</li>
+                       <li>Suporte</li>
+                     </ul>
+37 : ai na div que esta o logo, vou dar uma classe pra ela
+                     <div class="caixa-roxa">
+38 : ai vou para o css e comecar a estilizar a caixa-roxa, logo acima de .logo
+                         .caixa-roxa {     }
+                                        displey: flex;
+39 : ai no css vou estilizar a lista tambem, indo abaixo da caixa-roxa
+                         ul {     }
+                               displey: flex;
+                               gap: 100px; (distancia uma palavra da outra, no menu)
+                               list-style: none;
+                               margin-left: 50 ou 100px; analizar (da um espaco so do lado esquerdo) 
+     ai dentro do css volto la no .caixa-roxa e vou incluir
+                                        height: 50px;
+                                        align-items: center;
+                                        justify-content: center;
+                                        border-botton: 1px solid #d3d3d3; (borda so na parte de baixo (uma linha)) 
+40 : ai no css vou estilizar os itens da lista as li
+                         li {      }
+                               font-size: 12px;
+                               font-weight: 400px;
+                               color: #373737;
+41 : ai vou no html e criar outra div, la em baixo, acima da imagem, e ja dar uma classe pra ela
+                      <div class="circulo"></div>
+42 : ai vou no css e estilizar o circulo, 
+                         .circulo {     }
+                                     width: 100%;
+                                     height: 100%;
+                                     background: #81A5C4;  
+                                     position: absolute;
+                                     top: 0;
+                                     left: 0;
+                                     clip-path: circle(600px at right 1000px);
+
+
+agora vamos acoplar o javascript no projeto
+
+43 : ir no html e incluir o arquivo scripts.js
+44 : ai preciso informar ao html que vou comecar a usar o javascript no sistema,
+     logo abaixo do link do css (style.css) na tag heady
+                      <script src="./scripts.js"></script>
+45 : vou la html, nos botoes e acionar a funcao do javascript
+                    <button onclick="trocaCor('#81A5C4')" class="azul troca-cor"></button>
+                    <button onclick="trocaCor('#F7DA47')" class="amarelo troca-cor"></button>
+                    <button onclick="trocaCor('#C1C1C1')" class="branco troca-cor"></button>
+                    <button onclick="trocaCor('#272D33')" class="preto troca-cor"></button>
+                    <button onclick="trocaCor('#B50012')" class="vermelho troca-cor"></button>
+                    <button onclick="trocaCor('#EDE7F1')" class="roxo troca-cor"></button>
+46 : ai no scripts.js vou colocar a funcao para executar as cores na pagina (do desenho atras do iphone)
+                    function trocaCor(cor){
+                       let circulo = document.querySelector(".circulo")
+                       circulo.style.background = cor
+47 : ai vamos criar outra funcao, agora para pegar as imagens (as cores dos iphones)
+     antes vou no html e la nos botoes, posso colocar mais de uma funcao dentro deles
+     <button onclick="trocaCor('#81A5C4');trocaImagem('./img/iphone-azul.png')" class="azul troca-cor"></button>
+     <button onclick="trocaCor('#F7DA47');trocaImagem('./img/iphone-amarelo.png')" class="amarelo troca-cor"></button>
+     <button onclick="trocaCor('#C1C1C1');trocaImagem('./img/iphone-branco.png')" class="branco troca-cor"></button>
+     <button onclick="trocaCor('#272D33');trocaImagem('./img/iphone-preto.png')" class="preto troca-cor"></button>
+     <button onclick="trocaCor('#B50012');trocaImagem('./img/iphone-vermelho.png')" class="vermelho troca-cor"></button>
+     <button onclick="trocaCor('#EDE7F1');trocaImagem('./img/iphone-roxo.png')" class="roxo troca-cor"></button>
+     ai no scripts.js vou colocar a funcao para trocar as imagens dos aparelhos
+                    function trocaImagem(imagem)
+                       let imgIphone = document.querySelector(".iphone")
+                       imgIphone.src = imagem                                 
+                                                                                     
+
+
+                                    
+                         
+                              
+                 
+                   
